@@ -3,18 +3,18 @@ Use our code today and make Angstrom's method great again!
 
 Installation:
 
-pip install git+https://github.com/yuanyuansjtu/High-T-Angstrom-Method.git#egg=pyangstromHT
+pip install git+https://github.com/RuralBrick/cylindrical-angstrom.git#egg=pyangstromHT
 
 You can import the useful function:from pyangstromHT import high_T_angstrom_method.Then you can call functions high_T_angstrom_method.interpolate_light_source_characteristic so that this code can do stuff for you.
 
 Just in case the repository is updated, please use this command to keep your local copy up to date:
 
-pip install --upgrade git+https://github.com/yuanyuansjtu/High-T-Angstrom-Method.git#egg=pyangstromHT
+pip install --upgrade git+https://github.com/RuralBrick/cylindrical-angstrom.git#egg=pyangstromHT
 
 
 It can also be installed to use on colab:
 
-!pip install git+https://github.com/yuanyuansjtu/High-T-Angstrom-Method.git#egg=pyangstromHT
+!pip install git+https://github.com/RuralBrick/cylindrical-angstrom.git#egg=pyangstromHT
 
 
 If this code keep your life great, please cite my paper so I can eat:
