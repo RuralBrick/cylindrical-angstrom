@@ -15,16 +15,16 @@ setuptools.setup(
 
     # Needed for dependencies
     install_requires=[
-        # 'numpy',
-        # 'pandas',
-        # 'matplotlib',
-        # 'tqdm',
-        # 'joblib',
-        # 'lmfit',
-        # 'chaospy',
-        # 'scipy',
-        # 'pymc',
-        # 'aesara',
+        'numpy',
+        'pandas',
+        'matplotlib',
+        'tqdm',
+        'joblib',
+        'lmfit',
+        'chaospy',
+        'scipy',
+        'pymc',
+        'aesara',
         # 'sklearn'
     ],
     # *strongly* suggested for sharing
