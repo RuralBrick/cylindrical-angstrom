@@ -25,7 +25,7 @@ setuptools.setup(
         'scipy',
         'pymc',
         'aesara',
-        # 'sklearn'
+        'scikit-learn'
     ],
     # *strongly* suggested for sharing
     version='0.0',
