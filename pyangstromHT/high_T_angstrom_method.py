@@ -20,9 +20,9 @@ import matplotlib.ticker as mticker
 import matplotlib as mpl
 from scipy.optimize import minimize as minimize2
 
-import pymc3 as pm
-import theano
-import theano.tensor as tt
+import pymc as pm
+import aesara as theano
+import aesara.tensor as tt
 
 from scipy.stats import norm
 from scipy.stats import multivariate_normal
