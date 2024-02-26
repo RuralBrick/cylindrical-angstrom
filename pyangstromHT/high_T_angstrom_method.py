@@ -1348,20 +1348,11 @@ def radial_temperature_average_disk_sample_several_ranges(x0, y0, N_Rmax, theta_
 
             temp_dump = pickle.load(open(dump_file_path, 'rb'))
 
-        temp_dump = np.array(temp_dump);
-        temp_dump = temp_dump[temp_dump[:, 1].argsort()]  # sort based on the second column, which is relative time
-
-        temp_profile = [];
-        time_series = []
-        for item in temp_dump:
-            temp_profile.append(item[0])
-            time_series.append(item[1])
-        time_series = np.array(time_series)
-        temp_data = np.array(temp_profile)
-        time_data = time_series - min(time_series)  # such that time start from zero
-
-        df_temperature = pd.DataFrame(data=temp_data)  # return a dataframe containing radial averaged temperature and relative time
-        df_temperature['reltime'] = time_data
+        temp_profile, time_series = zip(*temp_dump)
+        df_temperature = pd.DataFrame(temp_profile)
+        df_temperature['reltime'] = time_series
+        df_temperature['reltime'] -= df_temperature['reltime'].min()
+        df_temperature = df_temperature.sort_values('reltime')
 
         df_temperature_list.append(df_temperature)
 
